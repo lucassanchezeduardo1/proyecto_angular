@@ -1,0 +1,63 @@
+/* Contenedor principal */
+.navbar {
+  background-color: #1e1e1e;
+  padding: 1rem 2rem;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1000;
+}
+
+/* Contenido interno */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Marca / título */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Menú de navegación */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Enlaces */
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Hover */
+.nav-link:hover {
+  color: #4dabf7;
+}
+
+/* Línea debajo al pasar el mouse */
+.nav-link::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: #4dabf7;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
